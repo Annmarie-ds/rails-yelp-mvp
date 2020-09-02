@@ -1,7 +1,9 @@
-<ul>
+<div class ="container">
+<ul class = "list-unstyled p-3">
   <% @restaurants.each do |restaurant| %>
     <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
   <% end %>
-</ul>
 
-<%= link_to 'New Restaurant', new_restaurant_path %>
+</ul>
+<p class = "ml-3 btn btn-outline-primary"><%= link_to 'New Restaurant', new_restaurant_path %></p>
+</div>
